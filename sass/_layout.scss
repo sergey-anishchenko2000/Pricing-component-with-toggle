@@ -1,0 +1,47 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 2rem;
+    background: url('../img/bg-bottom.svg'), url('../img/bg-top.svg'), var(--color-very-light-greyish-blue);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+
+    @media only screen and (min-width: 1150px) {
+        padding: 9rem 5rem;
+        min-height: 100vh;
+    }
+}
+
+.heading {
+    margin-bottom: 5rem;
+}
+
+.toggle-switch-wrapper {
+    margin-bottom: 8rem;
+}
+
+.pricing-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 1150px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--color-dark-greyish-blue);
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: var(--color-greyish-blue);
+    }
+}
